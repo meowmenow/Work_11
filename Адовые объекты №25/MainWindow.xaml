@@ -1,0 +1,29 @@
+﻿<Window x:Class="Адовые_объекты__25.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Адовые_объекты__25"
+        mc:Ignorable="d"
+         Title="Янемогу" Height="450" Width="800" Initialized="Sozidat_Initialized" ResizeMode="NoResize" PreviewKeyDown="Letsgo_PreviewKeyDown" >
+    <Grid Background="SeaGreen">
+        <Menu BorderBrush="MediumAquamarine" Margin="0,0,-0.4,393" Background="#FFA7F78A">
+            
+            <MenuItem Header="Do it!" FontFamily="Comic Sans MS" FontWeight="Bold">
+                <MenuItem Header="Анек" Click="Anek_Click"></MenuItem>
+                <MenuItem Header="About programm" Click="About_Click"></MenuItem>
+            </MenuItem>
+        </Menu>
+        <Button Content="Stels" Margin="613,351,10,10" RenderTransformOrigin="1.183,2.155" Click="stels_Click" BorderBrush="MediumAquamarine" Background="{x:Null}" FontFamily="Comic Sans MS" FontWeight="Bold"></Button>
+        <Button Content="Вас заметили" Margin="10,351,603,10" Click="skyrim_Click" Background="{x:Null}" BorderBrush="MediumAquamarine" FontFamily="Comic Sans MS" FontWeight="Bold"></Button>
+        <Button x:Name="tp" Content="Перемещение" Margin="315,351,308,10" Click="teleport_Click" BorderBrush="MediumAquamarine" Background="{x:Null}" FontFamily="Comic Sans MS" FontWeight="Bold"></Button>
+        <Button IsCancel="True" Content="Exit" Margin="757,0,0,393" Click="Exit_Click" Background="White" BorderBrush="MediumAquamarine" Foreground="Red" FontFamily="Comic Sans MS" FontWeight="Bold" RenderTransformOrigin="-0.03,0.516"></Button>
+        <Label Content="X-" Margin="10,146,747,236" RenderTransformOrigin="-0.2,1.541" FontFamily="Comic Sans MS" FontWeight="Bold"></Label>
+        <Label Content="Y-" Margin="11,214,746,172" RenderTransformOrigin="1.629,-0.24" FontFamily="Comic Sans MS" FontWeight="Bold"></Label>
+        <TextBox BorderBrush="MediumAquamarine" x:Name="coord_X" Margin="58,146,603,219" Background="{x:Null}" TextChanged="coord_X_TextChanged"></TextBox>
+        <TextBox BorderBrush="MediumAquamarine" x:Name="coord_Y" Margin="58,214,603,151" Background="{x:Null}" TextChanged="coord_Y_TextChanged"></TextBox>
+        <Label Content="Координаты:" Margin="0,106,603,273" FontFamily="Comic Sans MS" FontWeight="Bold"></Label>
+        <Image Margin="202,41,10,88" Source="/1612584855_4-p-fon-dlya-zelenoi-lyagushki-5.jpg" Stretch="Fill"/>
+        <Canvas x:Name="cvas" Margin="202,32,10,88"/>
+    </Grid>
+</Window>
